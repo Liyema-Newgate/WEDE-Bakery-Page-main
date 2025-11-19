@@ -78,7 +78,6 @@ footer {
     margin-top: 40px;
 }
 
-/* Cart Page */
 .cart-container {
     max-width: 800px;
     margin: auto;
@@ -93,16 +92,11 @@ footer {
     margin-bottom: 15px;
 }
 
-.cart-item h3 {
-    margin: 0;
-}
-
 .cart-item button {
     background: red;
     color: white;
     border: none;
     padding: 8px;
-    margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -111,4 +105,39 @@ footer {
     font-size: 22px;
     font-weight: bold;
     margin-top: 20px;
+}
+
+.checkout-btn {
+    background: #ff83b7;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.checkout-btn:hover {
+    background: #ff5ea0;
+}
+
+/* Checkout Popup */
+#checkoutPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.popup-content {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    margin: 10% auto;
+    border-radius: 10px;
+    text-align: center;
 }

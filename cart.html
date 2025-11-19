@@ -20,11 +20,27 @@
 </nav>
 
 <div class="cart-container">
-    <h2>Items You Selected</h2>
+    <h2>Your Items</h2>
 
     <div id="cart-items"></div>
 
     <p id="cart-total" class="cart-total"></p>
+
+    <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+</div>
+
+<!-- Checkout Popup -->
+<div id="checkoutPopup">
+    <div class="popup-content">
+        <h3>Enter Your Details</h3>
+
+        <input id="name" type="text" placeholder="Name"><br><br>
+        <input id="surname" type="text" placeholder="Surname"><br><br>
+        <input id="address" type="text" placeholder="Address"><br><br>
+        <input id="mobile" type="text" placeholder="Mobile Number"><br><br>
+
+        <button onclick="confirmOrder()" class="checkout-btn">Confirm Order</button>
+    </div>
 </div>
 
 <footer>

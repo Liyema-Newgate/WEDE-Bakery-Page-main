@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact - Wendy's Sweet Treats</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="description" content="contact wendy's sweet treats — cape town locations and phone numbers." />
+  <meta name="keywords" content="contact, cape town bakery, wendy's sweet treats contact" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>contact — wendy's sweet treats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">contact</h1>
+      <nav class="main-nav" aria-label="main navigation">
+        <a href="index.html">home</a>
+        <a href="gallery.html">gallery</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <button id="openCartBtn" class="cart-btn">cart 🛒</button>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <h1>Contact Us</h1>
-</header>
+  <main class="container">
+    <section class="contact-intro">
+      <h2>cape town locations</h2>
+      <p>visit any of our bakeries around cape town — click a location to open an interactive map.</p>
+    </section>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart</a>
-</nav>
+    <section class="accordion">
+      <button class="accordion-btn">city centre</button>
+      <div class="accordion-content">
+        <p>phone: 021 555 1234</p>
+        <div class="map-wrap">
+          <!-- google maps embed for city centre -->
+          <iframe
+            title="Cape Town city centre map"
+            src="https://www.google.com/maps?q=Cape%20Town%20City%20Centre&z=14&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
 
-<div style="padding: 30px; max-width: 900px; margin: auto;">
+      <button class="accordion-btn">claremont</button>
+      <div class="accordion-content">
+        <p>phone: 021 750 9876</p>
+        <div class="map-wrap">
+          <iframe
+            title="Claremont Cape Town map"
+            src="https://www.google.com/maps?q=Claremont%20Cape%20Town&z=14&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
 
-    <h2>Store Locations (South Africa)</h2>
+      <button class="accordion-btn">sea point</button>
+      <div class="accordion-content">
+        <p>phone: 021 917 4455</p>
+        <div class="map-wrap">
+          <iframe
+            title="Sea Point Cape Town map"
+            src="https://www.google.com/maps?q=Sea%20Point%20Cape%20Town&z=14&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <h3>Cape Town</h3>
-    <p>📍 22 Long Street, Cape Town  
-       📞 021 555 8800</p>
+  <footer class="site-footer">
+    <p>© 2025 wendy's sweet treats</p>
+  </footer>
 
-    <h3>Johannesburg</h3>
-    <p>📍 15 Sandton Drive, Sandton  
-       📞 011 340 9910</p>
-
-    <h3>Durban</h3>
-    <p>📍 9 Florida Road  
-       📞 031 442 6701</p>
-
-    <h3>Port Elizabeth</h3>
-    <p>📍 4 Stanley Street  
-       📞 041 722 1190</p>
-
-</div>
-
-<footer>
-    © 2025 Wendy's Sweet Treats
-</footer>
-
+  <script src="script.js" defer></script>
 </body>
 </html>

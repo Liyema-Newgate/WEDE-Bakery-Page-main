@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About - Wendy's Sweet Treats</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="description" content="about wendy's sweet treats — our story and baking philosophy." />
+  <meta name="keywords" content="about, bakery, wendy's sweet treats" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>about — wendy's sweet treats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">about</h1>
+      <nav class="main-nav" aria-label="main navigation">
+        <a href="index.html">home</a>
+        <a href="gallery.html">gallery</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+        <button id="openCartBtn" class="cart-btn">cart 🛒</button>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <h1>About Wendy's Sweet Treats</h1>
-</header>
+  <main class="container">
+    <section class="about-intro">
+      <h2>our story</h2>
+      <p>wendy's sweet treats started as a small kitchen in cape town — with a mission to craft delicious, handmade desserts using quality ingredients and lots of love.</p>
+    </section>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart</a>
-</nav>
+    <section class="accordion">
+      <button class="accordion-btn">our baking philosophy</button>
+      <div class="accordion-content">
+        <p>we prefer simple, fresh ingredients, slow baking and time-tested recipes that make every bite memorable.</p>
+      </div>
 
-<div style="padding: 30px; max-width: 800px; margin: auto;">
-    <h2>Our Story</h2>
-    <p>
-        Wendy’s Sweet Treats is a family-owned bakery based in South Africa.
-        We specialize in handmade cakes, donuts, pastries, cupcakes, and more!
-        Every treat is made fresh daily using high-quality ingredients and a
-        whole lot of love.
-    </p>
+      <button class="accordion-btn">community & events</button>
+      <div class="accordion-content">
+        <p>we cater for birthdays, small events and local markets. contact us for custom orders.</p>
+      </div>
 
-    <p>
-        We aim to bring joy to households, events, and everyday moments through
-        delicious desserts crafted with passion.
-    </p>
-</div>
+      <button class="accordion-btn">sustainability</button>
+      <div class="accordion-content">
+        <p>where possible we source local ingredients and use recyclable packaging.</p>
+      </div>
+    </section>
+  </main>
 
-<footer>
-    © 2025 Wendy's Sweet Treats
-</footer>
+  <footer class="site-footer">
+    <p>© 2025 wendy's sweet treats</p>
+  </footer>
 
+  <script src="script.js" defer></script>
 </body>
 </html>

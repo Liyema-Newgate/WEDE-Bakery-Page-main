@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Wendy's Sweet Treats</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html" class="active">Enquiry</a>
+    </nav>
+</header>
+
+<h1 class="page-title">Product & Service Enquiry</h1>
+
+<section class="form-section">
+
+<form id="enquiryForm">
+
+    <label>Name</label>
+    <input type="text" id="enqName" required minlength="2">
+
+    <label>Email</label>
+    <input type="email" id="enqEmail" required>
+
+    <label>Phone</label>
+    <input type="tel" id="enqPhone" required pattern="[0-9]{10}">
+
+    <label>Enquiry Type</label>
+    <select id="enqType" required>
+        <option value="">Select</option>
+        <option value="Pricing">Pricing Enquiry</option>
+        <option value="Availability">Product Availability</option>
+        <option value="Custom Order">Custom Order</option>
+        <option value="Volunteer/Sponsor">Volunteer / Sponsor</option>
+    </select>
+
+    <label>Your Question</label>
+    <textarea id="enqQuestion" required minlength="5"></textarea>
+
+    <button type="submit" class="btn confirm-btn">Submit Enquiry</button>
+</form>
+
+<div id="enqResponse"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

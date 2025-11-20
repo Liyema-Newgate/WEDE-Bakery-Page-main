@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="about wendy's sweet treats — our story and baking philosophy." />
-  <meta name="keywords" content="about, bakery, wendy's sweet treats" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>about — wendy's sweet treats</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Wendy's Sweet Treats</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="brand">about</h1>
-      <nav class="main-nav" aria-label="main navigation">
-        <a href="index.html">home</a>
-        <a href="gallery.html">gallery</a>
-        <a href="about.html">about</a>
-        <a href="contact.html">contact</a>
-        <button id="openCartBtn" class="cart-btn">cart 🛒</button>
-      </nav>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+</header>
+
+<h1 class="page-title">About Us</h1>
+
+<section class="container">
+    <p>Wendy’s Sweet Treats is a family-owned bakery based in Cape Town, specialising in handcrafted cakes, cupcakes, pastries, and artisanal desserts.</p>
+
+    <div class="accordion">
+        <button class="accordion-btn">Our Story</button>
+        <div class="accordion-content">
+            <p>What began in a tiny home kitchen has grown into a thriving bakery serving customers daily.</p>
+        </div>
+
+        <button class="accordion-btn">Our Values</button>
+        <div class="accordion-content">
+            <p>We pride ourselves on fresh ingredients, classic recipes, and unforgettable flavours.</p>
+        </div>
+
+        <button class="accordion-btn">Sustainability</button>
+        <div class="accordion-content">
+            <p>We use recyclable packaging and locally sourced ingredients wherever possible.</p>
+        </div>
     </div>
-  </header>
+</section>
 
-  <main class="container">
-    <section class="about-intro">
-      <h2>our story</h2>
-      <p>wendy's sweet treats started as a small kitchen in cape town — with a mission to craft delicious, handmade desserts using quality ingredients and lots of love.</p>
-    </section>
-
-    <section class="accordion">
-      <button class="accordion-btn">our baking philosophy</button>
-      <div class="accordion-content">
-        <p>we prefer simple, fresh ingredients, slow baking and time-tested recipes that make every bite memorable.</p>
-      </div>
-
-      <button class="accordion-btn">community & events</button>
-      <div class="accordion-content">
-        <p>we cater for birthdays, small events and local markets. contact us for custom orders.</p>
-      </div>
-
-      <button class="accordion-btn">sustainability</button>
-      <div class="accordion-content">
-        <p>where possible we source local ingredients and use recyclable packaging.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2025 wendy's sweet treats</p>
-  </footer>
-
-  <script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>

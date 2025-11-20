@@ -1,54 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="photo gallery of wendy's sweet treats — cakes, cupcakes and pastries." />
-  <meta name="keywords" content="bakery gallery, cakes, cupcakes, pastries" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>gallery — wendy's sweet treats</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Wendy's Sweet Treats</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="brand">gallery</h1>
-      <nav class="main-nav" aria-label="main navigation">
-        <a href="index.html">home</a>
-        <a href="gallery.html">gallery</a>
-        <a href="about.html">about</a>
-        <a href="contact.html">contact</a>
-        <button id="openCartBtn" class="cart-btn">cart 🛒</button>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <section class="gallery-grid">
-      <img src="images/cake1.jpg" alt="chocolate fudge cake" class="gallery-img">
-      <img src="images/cake2.jpg" alt="vanilla celebration cake" class="gallery-img">
-      <img src="images/cake3.jpg" alt="strawberry layer cake" class="gallery-img">
-      <img src="images/cupcake1.jpg" alt="pink velvet cupcakes" class="gallery-img">
-      <img src="images/cupcake2.jpg" alt="vanilla dream cupcakes" class="gallery-img">
-      <img src="images/pastry1.jpg" alt="strawberry danish" class="gallery-img">
-      <img src="images/pastry2.jpg" alt="chocolate croissant" class="gallery-img">
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+</header>
+
+<h1 class="page-title">Gallery</h1>
+
+<section class="gallery-container">
+    <img src="images/cake1.jpg" alt="chocolate fudge cake" class="gallery-img">
+      <img src="images/cake3.jpg" alt="vanilla celebration cake" class="gallery-img">
+      <img src="images/cake2.jpg" alt="strawberry layer cake" class="gallery-img">
+      <img src="images/cupcake2.jpg" alt="pink velvet cupcakes" class="gallery-img">
+      <img src="images/cupcake1.jpg" alt="vanilla dream cupcakes" class="gallery-img">
+      <img src="images/pastry2.jpg" alt="strawberry danish" class="gallery-img">
+      <img src="images/pastry1.jpg" alt="chocolate croissant" class="gallery-img">
       <img src="images/tart1.jpg" alt="lemon tart" class="gallery-img">
-    </section>
-  </main>
+</section>
 
-  <!-- lightbox available globally (same as index) -->
-  <div id="lightbox" class="modal" aria-hidden="true" tabindex="-1">
-    <div class="lightbox-content">
-      <button class="modal-close" id="closeLightbox" aria-label="close image">&times;</button>
-      <img id="lightboxImg" alt="expanded item">
-      <p id="lightboxCaption" class="lightbox-caption"></p>
-    </div>
-  </div>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
 
-  <footer class="site-footer">
-    <p>© 2025 wendy's sweet treats</p>
-  </footer>
-
-  <script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>

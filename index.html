@@ -1,159 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Wendy's Sweet Treats — cakes, cupcakes and pastries in Cape Town. Order online and enjoy freshly baked treats." />
-  <meta name="keywords" content="bakery, cakes, cupcakes, pastries, wendy's sweet treats, Cape Town bakery" />
-  <meta name="author" content="Wendy's Sweet Treats" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Wendy's Sweet Treats — cakes, cupcakes, pastries, and baked goods in Cape Town. Order fresh treats today!">
+    <meta name="keywords" content="bakery, cupcakes, cakes, pastries, Wendy's Sweet Treats, Cape Town bakery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Wendy's Sweet Treats — Home</title>
+    <title>Wendy's Sweet Treats — Home</title>
 
-  <!-- google font link (preferred over @import) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="brand">wendy's sweet treats</h1>
-      <nav class="main-nav" aria-label="main navigation">
-        <a href="index.html">home</a>
-        <a href="gallery.html">gallery</a>
-        <a href="about.html">about</a>
-        <a href="contact.html">contact</a>
-        <button id="openCartBtn" class="cart-btn" aria-haspopup="dialog" aria-controls="cartModal">cart 🛒</button>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <h1 class="brand">wendy's sweet treats</h1>
+
+        <nav class="main-nav">
+            <a href="index.html" class="active">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="enquiry.html">enquiry</a>
+            <button id="openCartBtn" class="cart-btn">cart 🛒</button>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
     <section class="hero">
-      <h2 class="hero-title">freshly baked. sweetly crafted.</h2>
-      <p class="hero-sub">handmade cakes, cupcakes and pastries. proudly in south africa.</p>
+        <h2 class="hero-title">freshly baked. sweetly crafted.</h2>
+        <p class="hero-sub">cakes, cupcakes, pastries — handmade daily in cape town.</p>
     </section>
 
     <section class="controls">
-      <div class="search-wrap">
-        <input id="searchInput" class="search-input" type="search" placeholder="search for treats (e.g. chocolate, cupcake)..." aria-label="search products">
-      </div>
+        <div class="search-wrap">
+            <input id="searchInput" class="search-input" type="search" placeholder="search for treats..." aria-label="search products">
+        </div>
 
-      <div id="tagFilters" class="tag-wrap" role="tablist" aria-label="product filters">
-        <button class="tag active" data-tag="all" aria-pressed="true">all</button>
-        <button class="tag" data-tag="cake">cake</button>
-        <button class="tag" data-tag="cupcake">cupcake</button>
-        <button class="tag" data-tag="pastry">pastry</button>
-      </div>
+        <div id="tagFilters" class="tag-wrap">
+            <button class="tag active" data-tag="all">all</button>
+            <button class="tag" data-tag="cake">cake</button>
+            <button class="tag" data-tag="cupcake">cupcake</button>
+            <button class="tag" data-tag="pastry">pastry</button>
+        </div>
     </section>
 
     <section id="productGrid" class="grid">
-      <!-- product cards: data-name is used by search; data-tag by filter -->
-      <article class="product" data-tag="cake" data-name="chocolate fudge cake">
-        <img src="images/cake1.jpg" alt="chocolate fudge cake" class="product-img">
-        <h3 class="product-title">chocolate fudge cake</h3>
-        <p class="product-price">R120</p>
-        <button class="addToCart">add to cart</button>
-      </article>
 
-      <article class="product" data-tag="cake" data-name="vanilla celebration cake">
-        <img src="images/cake3.jpg" alt="vanilla celebration cake" class="product-img">
-        <h3 class="product-title">vanilla celebration cake</h3>
-        <p class="product-price">R110</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="cupcake" data-name="chocolate cupcake">
+            <img src="images/cupcake_chocolate.jpg" class="product-img" alt="Chocolate Cupcake">
+            <h3 class="product-title">Chocolate Cupcake</h3>
+            <p class="product-price">R25</p>
+            <button class="addToCart">add to cart</button>
+        </article>
 
-      <article class="product" data-tag="cupcake" data-name="pink velvet cupcakes">
-        <img src="images/cupcake2.jpg" alt="pink velvet cupcakes" class="product-img">
-        <h3 class="product-title">pink velvet cupcakes (6)</h3>
-        <p class="product-price">R60</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="cupcake" data-name="vanilla cupcake">
+            <img src="images/cupcake_vanilla.jpg" class="product-img" alt="Vanilla Cupcake">
+            <h3 class="product-title">Vanilla Cupcake</h3>
+            <p class="product-price">R22</p>
+            <button class="addToCart">add to cart</button>
+        </article>
 
-      <article class="product" data-tag="cupcake" data-name="vanilla dream cupcakes">
-        <img src="images/cupcake1.jpg" alt="vanilla cupcakes" class="product-img">
-        <h3 class="product-title">vanilla dream cupcakes (6)</h3>
-        <p class="product-price">R55</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="cake" data-name="strawberry cheesecake">
+            <img src="images/cheesecake_strawberry.jpg" class="product-img" alt="Strawberry Cheesecake">
+            <h3 class="product-title">Strawberry Cheesecake</h3>
+            <p class="product-price">R80</p>
+            <button class="addToCart">add to cart</button>
+        </article>
 
-      <article class="product" data-tag="pastry" data-name="strawberry danish">
-        <img src="images/pastry2.jpg" alt="strawberry danish" class="product-img">
-        <h3 class="product-title">strawberry danish</h3>
-        <p class="product-price">R35</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="pastry" data-name="chocolate doughnut">
+            <img src="images/doughnut_chocolate.jpg" class="product-img" alt="Chocolate Doughnut">
+            <h3 class="product-title">Chocolate Doughnut</h3>
+            <p class="product-price">R18</p>
+            <button class="addToCart">add to cart</button>
+        </article>
 
-      <article class="product" data-tag="pastry" data-name="chocolate croissant">
-        <img src="images/pastry1.jpg" alt="chocolate croissant" class="product-img">
-        <h3 class="product-title">chocolate croissant</h3>
-        <p class="product-price">R40</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="pastry" data-name="pink iced doughnut">
+            <img src="images/doughnut_pink.jpg" class="product-img" alt="Pink Iced Doughnut">
+            <h3 class="product-title">Pink Iced Doughnut</h3>
+            <p class="product-price">R20</p>
+            <button class="addToCart">add to cart</button>
+        </article>
 
-      <article class="product" data-tag="pastry" data-name="lemon tart">
-        <img src="images/tart1.jpg" alt="lemon tart" class="product-img">
-        <h3 class="product-title">lemon tart</h3>
-        <p class="product-price">R45</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="cake" data-name="red velvet slice">
+            <img src="images/slice_redvelvet.jpg" class="product-img" alt="Red Velvet Slice">
+            <h3 class="product-title">Red Velvet Slice</h3>
+            <p class="product-price">R32</p>
+            <button class="addToCart">add to cart</button>
+        </article>
 
-      <article class="product" data-tag="cake" data-name="strawberry layer cake">
-        <img src="images/cake2.jpg" alt="strawberry layer cake" class="product-img">
-        <h3 class="product-title">strawberry layer cake</h3>
-        <p class="product-price">R140</p>
-        <button class="addToCart">add to cart</button>
-      </article>
+        <article class="product" data-tag="cake" data-name="carrot cake slice">
+            <img src="images/slice_carrotcake.jpg" class="product-img" alt="Carrot Cake Slice">
+            <h3 class="product-title">Carrot Cake Slice</h3>
+            <p class="product-price">R28</p>
+            <button class="addToCart">add to cart</button>
+        </article>
+
+        <article class="product" data-tag="pastry" data-name="sugar cookies">
+            <img src="images/cookies_sugar.jpg" class="product-img" alt="Sugar Cookies">
+            <h3 class="product-title">Sugar Cookies</h3>
+            <p class="product-price">R15</p>
+            <button class="addToCart">add to cart</button>
+        </article>
+
     </section>
-  </main>
 
-  <!-- cart modal -->
-  <div id="cartModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cartTitle" tabindex="-1">
-    <div class="modal-content" role="document">
-      <button class="modal-close" id="closeCart" aria-label="close cart">&times;</button>
-      <h2 id="cartTitle">your cart</h2>
-      <ul id="cartItems" class="cart-list" aria-live="polite"></ul>
-      <p id="cartTotal" class="cart-total">total: R0</p>
-      <button id="checkoutBtn" class="checkout-button">proceed to checkout</button>
+</main>
+
+<!-- CART MODAL -->
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <button id="closeCart" class="modal-close">&times;</button>
+        <h2>Your Cart</h2>
+        <ul id="cartItems" class="cart-list"></ul>
+        <p id="cartTotal">total: R0</p>
+        <button id="checkoutBtn" class="btn checkout-btn">Checkout</button>
     </div>
-  </div>
+</div>
 
-  <!-- checkout modal -->
-  <div id="checkoutModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" tabindex="-1">
-    <div class="modal-content" role="document">
-      <button class="modal-close" id="closeCheckout" aria-label="close checkout">&times;</button>
-      <h2 id="checkoutTitle">checkout</h2>
-      <form id="checkoutForm" class="checkout-form" novalidate>
-        <label>
-          <input name="firstName" type="text" placeholder="first name" required>
-        </label>
-        <label>
-          <input name="surname" type="text" placeholder="surname" required>
-        </label>
-        <label>
-          <input name="address" type="text" placeholder="address" required>
-        </label>
-        <label>
-          <input name="mobile" type="tel" placeholder="mobile number" required pattern="[0-9+\s-]{7,15}">
-        </label>
-        <button type="submit" class="checkout-button">confirm order</button>
-      </form>
+<!-- CHECKOUT MODAL -->
+<div id="checkoutModal" class="modal">
+    <div class="modal-content">
+        <button id="closeCheckout" class="modal-close">&times;</button>
+        <h2>Checkout</h2>
+
+        <form id="checkoutForm">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Surname" required>
+            <input type="text" placeholder="Address" required>
+            <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+
+            <button type="submit" class="btn confirm-btn">Confirm Order</button>
+        </form>
     </div>
-  </div>
+</div>
 
-  <!-- lightbox used on gallery, kept here for global availability -->
-  <div id="lightbox" class="modal" aria-hidden="true" tabindex="-1">
-    <div class="lightbox-content">
-      <button class="modal-close" id="closeLightbox" aria-label="close image">&times;</button>
-      <img id="lightboxImg" alt="expanded item">
-      <p id="lightboxCaption" class="lightbox-caption"></p>
-    </div>
-  </div>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
 
-  <footer class="site-footer">
-    <p>© 2025 wendy's sweet treats — cape town</p>
-  </footer>
+<footer class="site-footer">
+    <p>© 2025 Wendy's Sweet Treats — Cape Town</p>
+</footer>
 
-  <script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,78 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="contact wendy's sweet treats — cape town locations and phone numbers." />
-  <meta name="keywords" content="contact, cape town bakery, wendy's sweet treats contact" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>contact — wendy's sweet treats</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Wendy's Sweet Treats</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="brand">contact</h1>
-      <nav class="main-nav" aria-label="main navigation">
-        <a href="index.html">home</a>
-        <a href="gallery.html">gallery</a>
-        <a href="about.html">about</a>
-        <a href="contact.html">contact</a>
-        <button id="openCartBtn" class="cart-btn">cart 🛒</button>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <section class="contact-intro">
-      <h2>cape town locations</h2>
-      <p>visit any of our bakeries around cape town — click a location to open an interactive map.</p>
-    </section>
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+</header>
 
-    <section class="accordion">
-      <button class="accordion-btn">city centre</button>
-      <div class="accordion-content">
-        <p>phone: 021 555 1234</p>
-        <div class="map-wrap">
-          <!-- google maps embed for city centre -->
-          <iframe
-            title="Cape Town city centre map"
-            src="https://www.google.com/maps?q=Cape%20Town%20City%20Centre&z=14&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+<h1 class="page-title">Contact Us</h1>
 
-      <button class="accordion-btn">claremont</button>
-      <div class="accordion-content">
-        <p>phone: 021 750 9876</p>
-        <div class="map-wrap">
-          <iframe
-            title="Claremont Cape Town map"
-            src="https://www.google.com/maps?q=Claremont%20Cape%20Town&z=14&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+<section class="form-section">
 
-      <button class="accordion-btn">sea point</button>
-      <div class="accordion-content">
-        <p>phone: 021 917 4455</p>
-        <div class="map-wrap">
-          <iframe
-            title="Sea Point Cape Town map"
-            src="https://www.google.com/maps?q=Sea%20Point%20Cape%20Town&z=14&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
+<form id="contactForm" action="send-email.php" method="POST">
 
-  <footer class="site-footer">
-    <p>© 2025 wendy's sweet treats</p>
-  </footer>
+    <label>Name</label>
+    <input type="text" id="cname" required minlength="2">
 
-  <script src="script.js" defer></script>
+    <label>Email</label>
+    <input type="email" id="cemail" required>
+
+    <label>Phone</label>
+    <input type="tel" id="cphone" pattern="[0-9]{10}" placeholder="0834567890">
+
+    <label>Message Type</label>
+    <select id="cmsgtype" required>
+        <option value="">Select</option>
+        <option value="General Message">General Message</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Support">Support Request</option>
+    </select>
+
+    <label>Your Full Message</label>
+    <textarea id="cmessage" required minlength="10"></textarea>
+
+    <button class="btn checkout-btn" type="submit">Send Message</button>
+</form>
+
+<div id="contactResponse"></div>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
